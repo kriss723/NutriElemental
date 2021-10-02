@@ -11,6 +11,7 @@ namespace NutriElemental.App.Dominio
         public string Direccion {get; set;}
         public string Celular {get;set;}
         public string Email {get;set;}
+        public string Password{get;set;}
         public Genero Genero {get;set;}
     }
 }

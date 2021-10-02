@@ -12,7 +12,7 @@ namespace NutriElemental.App.Dominio
         public DateTime FechaNacimiento {get;set;}
 
         //Relaciones con las otras entidades
-        public Coah Coah {get; set;}
+        public Coach Coach {get; set;}
         public Nutricionista Nutricionista {get; set;}
         //Historia Registro
         /// <summary>
