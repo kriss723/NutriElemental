@@ -13,7 +13,8 @@ namespace NutriElemental.App.Persistencia
         public DbSet<Historia> Historias {get;set;}
         public DbSet<RegistroNutricional> RegistroNutricionales {get;set;}
         public DbSet<SugerenciaNutricional> SugerenciasNutricionales {get;set;} 
-        public DbSet<Antecedente> Antecedentes {get;set;}
+        public DbSet<AntecedenteFamiliar> AntecedentesFamiliares {get;set;}
+        public DbSet<AntecedentePersonal> AntecedentesPersonales {get;set;}
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -21,7 +22,7 @@ namespace NutriElemental.App.Persistencia
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = NutriAppDB");
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = NutriElementalDB");
             }
         }
 

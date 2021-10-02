@@ -95,28 +95,42 @@ namespace NutriElemental.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Antecedentes",
+                name: "AntecedentesFamiliares",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre_Sugerencia = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre_Antecedente = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HistoriaId = table.Column<int>(type: "int", nullable: true),
-                    HistoriaId1 = table.Column<int>(type: "int", nullable: true)
+                    HistoriaId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Antecedentes", x => x.Id);
+                    table.PrimaryKey("PK_AntecedentesFamiliares", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Antecedentes_Historias_HistoriaId",
+                        name: "FK_AntecedentesFamiliares_Historias_HistoriaId",
                         column: x => x.HistoriaId,
                         principalTable: "Historias",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AntecedentesPersonales",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre_Antecedente = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HistoriaId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AntecedentesPersonales", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Antecedentes_Historias_HistoriaId1",
-                        column: x => x.HistoriaId1,
+                        name: "FK_AntecedentesPersonales_Historias_HistoriaId",
+                        column: x => x.HistoriaId,
                         principalTable: "Historias",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -145,14 +159,14 @@ namespace NutriElemental.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Antecedentes_HistoriaId",
-                table: "Antecedentes",
+                name: "IX_AntecedentesFamiliares_HistoriaId",
+                table: "AntecedentesFamiliares",
                 column: "HistoriaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Antecedentes_HistoriaId1",
-                table: "Antecedentes",
-                column: "HistoriaId1");
+                name: "IX_AntecedentesPersonales_HistoriaId",
+                table: "AntecedentesPersonales",
+                column: "HistoriaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Historias_PacienteId",
@@ -183,7 +197,10 @@ namespace NutriElemental.App.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Antecedentes");
+                name: "AntecedentesFamiliares");
+
+            migrationBuilder.DropTable(
+                name: "AntecedentesPersonales");
 
             migrationBuilder.DropTable(
                 name: "RegistroNutricionales");

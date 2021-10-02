@@ -10,7 +10,7 @@ using NutriElemental.App.Persistencia;
 namespace NutriElemental.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211001235427_Inicial")]
+    [Migration("20211002002106_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("NutriElemental.App.Dominio.Antecedente", b =>
+            modelBuilder.Entity("NutriElemental.App.Dominio.AntecedenteFamiliar", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,19 +34,37 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.Property<int?>("HistoriaId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("HistoriaId1")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre_Sugerencia")
+                    b.Property<string>("Nombre_Antecedente")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("HistoriaId");
 
-                    b.HasIndex("HistoriaId1");
+                    b.ToTable("AntecedentesFamiliares");
+                });
 
-                    b.ToTable("Antecedentes");
+            modelBuilder.Entity("NutriElemental.App.Dominio.AntecedentePersonal", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("HistoriaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre_Antecedente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HistoriaId");
+
+                    b.ToTable("AntecedentesPersonales");
                 });
 
             modelBuilder.Entity("NutriElemental.App.Dominio.Historia", b =>
@@ -224,15 +242,18 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Paciente");
                 });
 
-            modelBuilder.Entity("NutriElemental.App.Dominio.Antecedente", b =>
+            modelBuilder.Entity("NutriElemental.App.Dominio.AntecedenteFamiliar", b =>
                 {
                     b.HasOne("NutriElemental.App.Dominio.Historia", null)
                         .WithMany("AntecedentesFamiliares")
                         .HasForeignKey("HistoriaId");
+                });
 
+            modelBuilder.Entity("NutriElemental.App.Dominio.AntecedentePersonal", b =>
+                {
                     b.HasOne("NutriElemental.App.Dominio.Historia", null)
                         .WithMany("AntecedentesPersonales")
-                        .HasForeignKey("HistoriaId1");
+                        .HasForeignKey("HistoriaId");
                 });
 
             modelBuilder.Entity("NutriElemental.App.Dominio.Historia", b =>
