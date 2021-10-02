@@ -17,7 +17,6 @@ listo
 -cambio en paciente String para cedula y el Id para identificar el registro
 -instalacion de todas las librerias del entity framework
 -creacion de una clase para los antecedentes (error al momento de crear el mapeo no admite datos primitivos)
--atomizacion convertida en dos entidades que relacionan el historial.
 
 pendiente
 -el equipo clone y cree la migracion de la BD
