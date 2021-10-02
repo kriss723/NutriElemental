@@ -8,9 +8,8 @@ namespace NutriElemental.App.Dominio
         public int Id {get;set;}
         public Paciente Paciente {get;set;}
         public string Diagnostico {get;set;}
-        public List<string> AntecedentesFamiliares {get;set;}
-
-        public List<string> AntecedentesPersonales {get; set;}
+        public List<Antecedente> AntecedentesFamiliares {get;set;}
+        public List<Antecedente> AntecedentesPersonales {get; set;}
         public List<SugerenciaNutricional> SugerenciaNutricional { get; set; }
     }
 }

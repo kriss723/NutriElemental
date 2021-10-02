@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LB2+fBHb2+PIYZ3dYLpnSfZDvsMJ8Z3hiOh6zlRzo3Sk7hH8MmfhAGaQKUQvuwzF4QhqH9BQtSpEMiZRZiY52g==",
+  "dgSpecHash": "ni7P+31vy6+kVChQrOpHmxPhtxS1XaE+Cl0yfgbSE80sr7kRB5Iju4FGfAtR58WJH4eJiFOCGeSv2lN1ahmV5g==",
   "success": true,
-  "projectFilePath": "G:\\programasMisionTICiclo3\\NutriElemental\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
+  "projectFilePath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

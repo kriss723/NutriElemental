@@ -7,3 +7,12 @@ G:\programasMisionTICiclo3\NutriElemental\NutriElemental\NutriElemental.App\Nutr
 G:\programasMisionTICiclo3\NutriElemental\NutriElemental\NutriElemental.App\NutriElemental.App.Dominio\bin\Debug\netstandard2.0\NutriElemental.App.Dominio.pdb
 G:\programasMisionTICiclo3\NutriElemental\NutriElemental\NutriElemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.dll
 G:\programasMisionTICiclo3\NutriElemental\NutriElemental\NutriElemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.pdb
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\bin\Debug\netstandard2.0\NutriElemental.App.Dominio.deps.json
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\bin\Debug\netstandard2.0\NutriElemental.App.Dominio.dll
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\bin\Debug\netstandard2.0\NutriElemental.App.Dominio.pdb
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.csprojAssemblyReference.cache
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.AssemblyInfoInputs.cache
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.AssemblyInfo.cs
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.csproj.CoreCompileInputs.cache
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.dll
+G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Dominio\obj\Debug\netstandard2.0\NutriElemental.App.Dominio.pdb
