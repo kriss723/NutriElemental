@@ -8,7 +8,7 @@ namespace NutriElemental.App.Persistencia
     {
         public DbSet<Persona> Personas {get;set;}
         public DbSet<Paciente> Pacientes {get;set;}
-        public DbSet<Coah> Coahs {get;set;}
+        public DbSet<Coach> Coachs {get;set;}
         public DbSet<Nutricionista> Nutricionistas {get;set;}
         public DbSet<Historia> Historias {get;set;}
         public DbSet<RegistroNutricional> RegistroNutricionales {get;set;}

@@ -8,5 +8,5 @@ namespace NutriElemental.App.Dominio
         public DateTime FechaHora {get;set;}
         public string Nombre_Sugerencia {get;set;}
         public string Descripcion {get;set;}
-    } 
+    }
 }

@@ -10,8 +10,8 @@ using NutriElemental.App.Persistencia;
 namespace NutriElemental.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211002002106_Inicial")]
-    partial class Inicial
+    [Migration("20211002220941_Entidades")]
+    partial class Entidades
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -119,6 +119,9 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
@@ -187,7 +190,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.ToTable("SugerenciasNutricionales");
                 });
 
-            modelBuilder.Entity("NutriElemental.App.Dominio.Coah", b =>
+            modelBuilder.Entity("NutriElemental.App.Dominio.Coach", b =>
                 {
                     b.HasBaseType("NutriElemental.App.Dominio.Persona");
 
@@ -197,7 +200,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.Property<string>("TarjetaProfesional")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Coah");
+                    b.HasDiscriminator().HasValue("Coach");
                 });
 
             modelBuilder.Entity("NutriElemental.App.Dominio.Nutricionista", b =>
@@ -220,7 +223,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.Property<string>("Ciudad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("CoahId")
+                    b.Property<int?>("CoachId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaNacimiento")
@@ -235,7 +238,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                     b.Property<int?>("NutricionistaId")
                         .HasColumnType("int");
 
-                    b.HasIndex("CoahId");
+                    b.HasIndex("CoachId");
 
                     b.HasIndex("NutricionistaId");
 
@@ -281,15 +284,15 @@ namespace NutriElemental.App.Persistencia.Migrations
 
             modelBuilder.Entity("NutriElemental.App.Dominio.Paciente", b =>
                 {
-                    b.HasOne("NutriElemental.App.Dominio.Coah", "Coah")
+                    b.HasOne("NutriElemental.App.Dominio.Coach", "Coach")
                         .WithMany()
-                        .HasForeignKey("CoahId");
+                        .HasForeignKey("CoachId");
 
                     b.HasOne("NutriElemental.App.Dominio.Nutricionista", "Nutricionista")
                         .WithMany()
                         .HasForeignKey("NutricionistaId");
 
-                    b.Navigation("Coah");
+                    b.Navigation("Coach");
 
                     b.Navigation("Nutricionista");
                 });

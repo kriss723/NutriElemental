@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NutriElemental.App.Persistencia.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class Entidades : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,6 +19,7 @@ namespace NutriElemental.App.Persistencia.Migrations
                     Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Celular = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Genero = table.Column<int>(type: "int", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TarjetaProfesional = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -29,15 +30,15 @@ namespace NutriElemental.App.Persistencia.Migrations
                     Longitud = table.Column<float>(type: "real", nullable: true),
                     Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    CoahId = table.Column<int>(type: "int", nullable: true),
+                    CoachId = table.Column<int>(type: "int", nullable: true),
                     NutricionistaId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Personas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Personas_Personas_CoahId",
-                        column: x => x.CoahId,
+                        name: "FK_Personas_Personas_CoachId",
+                        column: x => x.CoachId,
                         principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -174,9 +175,9 @@ namespace NutriElemental.App.Persistencia.Migrations
                 column: "PacienteId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Personas_CoahId",
+                name: "IX_Personas_CoachId",
                 table: "Personas",
-                column: "CoahId");
+                column: "CoachId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personas_NutricionistaId",

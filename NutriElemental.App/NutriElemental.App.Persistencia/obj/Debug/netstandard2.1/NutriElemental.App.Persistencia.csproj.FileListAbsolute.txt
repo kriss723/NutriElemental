@@ -10,3 +10,15 @@ G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\N
 G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.csproj.CopyComplete
 G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.dll
 G:\programasMisionTICiclo3\Nueva carpeta (2)\NutriElemental\Nutrielemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.pdb
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.AssemblyInfo.cs
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.dll
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.pdb
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\bin\Debug\netstandard2.1\NutriElemental.App.Persistencia.deps.json
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\bin\Debug\netstandard2.1\NutriElemental.App.Persistencia.dll
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\bin\Debug\netstandard2.1\NutriElemental.App.Persistencia.pdb
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\bin\Debug\netstandard2.1\NutriElemental.App.Dominio.dll
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\bin\Debug\netstandard2.1\NutriElemental.App.Dominio.pdb
+C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Persistencia\obj\Debug\netstandard2.1\NutriElemental.App.Persistencia.csproj.CopyComplete
