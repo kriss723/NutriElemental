@@ -8,6 +8,9 @@ namespace Nutrielemental.App.Persistencia
     {
         private readonly NutriElemental.App.Persistencia.AppContext _appContext = new NutriElemental.App.Persistencia.AppContext();
 
+        public IEnumerable<AntecedenteFamiliar> AntecedentesFamiliares {get;set;}
+        public IEnumerable<AntecedentePersonal> AntecedentesPersonales {get;set;}
+
         Historia IRepositorioHistoria.AddHistoria(Historia historia)
         {
             var HistoriaAdicionada = _appContext.Historias.Add(historia);
