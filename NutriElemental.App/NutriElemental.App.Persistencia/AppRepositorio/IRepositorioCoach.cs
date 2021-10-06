@@ -6,8 +6,8 @@ namespace NutriElemental.App.Persistencia
     public interface IRepositorioCoach
     {
         IEnumerable<Coach> GetAllCoach(); 
-        Paciente AddCoach (Paciente coach);
-        Paciente UpdateCoach (Paciente coach);
+        Coach AddCoach (Coach coach);
+        Coach UpdateCoach (Coach coach);
         void DeleteCoach (string CedulaCoach);
         Coach GetCoach (string CedulaCoach); 
     }
