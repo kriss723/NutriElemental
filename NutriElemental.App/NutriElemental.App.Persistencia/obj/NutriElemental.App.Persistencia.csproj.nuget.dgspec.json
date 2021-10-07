@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {}
+    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {}
   },
   "projects": {
-    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj": {
+    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
+        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
         "projectName": "NutriElemental.App.Dominio",
-        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
+        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\obj\\",
+        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {
+    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
+        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
         "projectName": "NutriElemental.App.Persistencia",
-        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
+        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\obj\\",
+        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj": {
-                "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj"
+              "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj": {
+                "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Dominio\\NutriElemental.App.Dominio.csproj"
               }
             }
           }

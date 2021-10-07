@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9uCG/3j6t5aO3M7IUaU8d78YXF17W/9PGZlcaWjUpowgK3qwa3CUZLMQwAcHDhaJ83EZsMHguZHYd28+uKsk6g==",
+  "dgSpecHash": "igettINaicM/YrZfzRS6fYMBoKEXc5nlFOgnKQO1hi/ip255HFXfhpvSXX3jfAXpYJW/j7Qf+76OCwYQmYrzXQ==",
   "success": true,
-  "projectFilePath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
+  "projectFilePath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

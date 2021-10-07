@@ -1,10 +1,11 @@
+using Microsoft.EntityFrameworkCore;
 using NutriElemental.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Nutrielemental.App.Persistencia
 {
-    public class RepositorioHistoria
+    public class RepositorioHistoria: IRepositorioHistoria
     {
         private readonly NutriElemental.App.Persistencia.AppContext _appContext = new NutriElemental.App.Persistencia.AppContext();
 
@@ -45,7 +46,7 @@ namespace Nutrielemental.App.Persistencia
 
         Historia IRepositorioHistoria.UpdateHistoria(Historia historia)
         {
-            var HistoriaEncontrada = _appContext.Pacientes.FirstOrDefault(p => p.Id == historia.Id);
+            var HistoriaEncontrada = _appContext.Historias.FirstOrDefault(p => p.Id == historia.Id);
             if (HistoriaEncontrada != null)
             {
                 //propiedades de la historia
@@ -62,9 +63,10 @@ namespace Nutrielemental.App.Persistencia
         List<AntecedenteFamiliar> IRepositorioHistoria.GetAllAntecedentesFamiliares(int IdHistoria)
         {
             //crear metodo para guardar los antecedenes en esta lista where 
+            
             foreach (var Antecedente in _appContext.AntecedentesFamiliares)
             {
-                var AntecedenteEncontrado = _appContext.AntecedentesFamiliares.FirstOrDefault(a => a.Historia.Id == IdHistoria);
+                var AntecedenteEncontrado = _appContext.AntecedentesFamiliares.FirstOrDefault(a => a.HistoriaId == IdHistoria);
 
                 AntecedentesFamiliares.Add(AntecedenteEncontrado);
 
@@ -72,7 +74,11 @@ namespace Nutrielemental.App.Persistencia
 
             return AntecedentesFamiliares;
 
-            lista = _appContext.AntecedentesFamiliares.inclu
+            /*
+            var Antecedentes =  _appContext.AntecedentesFamiliares
+                                .Include("AntecedetesFamiliares")
+                                .Where(x => x.HistoriaId == IdHistoria)
+                                .Select(x => x.Nombre_Antecedente);*/
 
             
         }
