@@ -8,8 +8,10 @@ namespace Nutrielemental.App.Persistencia
     {
         private readonly NutriElemental.App.Persistencia.AppContext _appContext = new NutriElemental.App.Persistencia.AppContext();
 
-        public IEnumerable<AntecedenteFamiliar> AntecedentesFamiliares {get;set;}
-        public IEnumerable<AntecedentePersonal> AntecedentesPersonales {get;set;}
+        public List<AntecedenteFamiliar> AntecedentesFamiliares {get;set;}
+        public List<AntecedentePersonal> AntecedentesPersonales {get;set;}
+
+        public List<AntecedenteFamiliar> lista {get;set;}
 
         Historia IRepositorioHistoria.AddHistoria(Historia historia)
         {
@@ -57,15 +59,37 @@ namespace Nutrielemental.App.Persistencia
 
         }
 
-        IEnumerable<AntecedenteFamiliar> IRepositorioHistoria.GetAllAntecedentesFamiliares(int IdHistoria)
+        List<AntecedenteFamiliar> IRepositorioHistoria.GetAllAntecedentesFamiliares(int IdHistoria)
         {
             //crear metodo para guardar los antecedenes en esta lista where 
+            foreach (var Antecedente in _appContext.AntecedentesFamiliares)
+            {
+                var AntecedenteEncontrado = _appContext.AntecedentesFamiliares.FirstOrDefault(a => a.Historia.Id == IdHistoria);
+
+                AntecedentesFamiliares.Add(AntecedenteEncontrado);
+
+            }
+
+            return AntecedentesFamiliares;
+
+            lista = _appContext.AntecedentesFamiliares.inclu
+
+            
         }
 
 
-        IEnumerable<AntecedentePersonal> IRepositorioHistoria.GetAllAntecedentesPersonales(int IdHistoria)
+        List<AntecedentePersonal> IRepositorioHistoria.GetAllAntecedentesPersonales(int IdHistoria)
         {
             //crear metodo para guardar los antecedenes en esta lista where 
+            foreach (var Antecedente in _appContext.AntecedentesPersonales)
+            {
+                var AntecedenteEncontrado = _appContext.AntecedentesPersonales.FirstOrDefault(a => a.HistoriaId == IdHistoria);
+
+                AntecedentesPersonales.Add(AntecedenteEncontrado);
+
+            }
+
+            return AntecedentesPersonales;
         }
 
     }
