@@ -5796,19 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jarle\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Consola\\NutriElemental.App.Consola.csproj",
+      "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Consola\\NutriElemental.App.Consola.csproj",
       "projectName": "NutriElemental.App.Consola",
-      "projectPath": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Consola\\NutriElemental.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\jarle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Consola\\obj\\",
+      "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Consola\\NutriElemental.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jarle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5819,8 +5819,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj"
+            "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj": {
+              "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Persistencia\\NutriElemental.App.Persistencia.csproj"
             }
           }
         }
@@ -5856,7 +5856,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }
