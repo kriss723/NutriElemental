@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj": {}
+    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj": {}
   },
   "projects": {
-    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj": {
+    "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
+        "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
         "projectName": "NutriElemental.App.Presentacion",
-        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
+        "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\obj\\",
+        "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
