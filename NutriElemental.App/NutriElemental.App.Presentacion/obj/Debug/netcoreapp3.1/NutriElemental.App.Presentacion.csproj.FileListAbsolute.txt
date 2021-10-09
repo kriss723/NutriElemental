@@ -21,7 +21,6 @@ C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriEleme
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.RazorCoreGenerate.cache
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Index.cshtml.g.cs
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -36,5 +35,3 @@ C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriEleme
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.pdb
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.genruntimeconfig.cache
 C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.csproj.CopyComplete
-C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Coachs\Index.cshtml.g.cs
-C:\Users\jarle\Desktop\estudio\software development\CICLO #3\proyecto\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Nutricionistas\Index.cshtml.g.cs

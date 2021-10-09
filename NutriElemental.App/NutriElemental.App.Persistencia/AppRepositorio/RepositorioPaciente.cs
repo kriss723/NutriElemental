@@ -6,12 +6,12 @@ namespace NutriElemental.App.Persistencia
 {
     public class RepositorioPaciente : IRepositorioPaciente
     {
-        private readonly AppContext _appContext;//= new AppContext();
+        private readonly AppContext _appContext = new AppContext();
 
-        public RepositorioPaciente(AppContext _appContext)
+        /*public RepositorioPaciente(AppContext _appContext)
         {
             this._appContext = _appContext;
-        }
+        }*/
 
         Paciente IRepositorioPaciente.AddPaciente(Paciente paciente)
         {

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\jarle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
       "projectName": "NutriElemental.App.Presentacion",
-      "projectPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "G:\\programasMisionTICiclo3\\Nueva carpeta (2)\\NutriElemental\\Nutrielemental.App\\NutriElemental.App.Presentacion\\obj\\",
+      "projectPath": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\NutriElemental.App.Presentacion.csproj",
+      "packagesPath": "C:\\Users\\jarle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jarle\\Desktop\\estudio\\software development\\CICLO #3\\proyecto\\NutriElemental\\NutriElemental.App\\NutriElemental.App.Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jarle\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
       }
     }
   }
