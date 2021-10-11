@@ -22,7 +22,7 @@ namespace NutriElemental.App.Persistencia
 
         void IRepositorioPaciente.DeletePaciente(string cedulaPaciente)
         {
-            var DelPaciente = _appContext.Pacientes.FirstOrDefault(p => p.Cedula == cedulaPaciente);
+            var DelPaciente = _appContext.Pacientes.Find(cedulaPaciente);
             if(DelPaciente == null)
                 return;
             _appContext.Pacientes.Remove(DelPaciente);
@@ -31,7 +31,7 @@ namespace NutriElemental.App.Persistencia
 
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
         {
-            var UpdPaciente = _appContext.Pacientes.FirstOrDefault(p => p.Id == paciente.Id);
+            var UpdPaciente = _appContext.Pacientes.Find(paciente.Id);
             if(UpdPaciente != null)
             {
                 UpdPaciente.Cedula = paciente.Cedula; 
@@ -57,7 +57,7 @@ namespace NutriElemental.App.Persistencia
 
         Paciente IRepositorioPaciente.GetPaciente(string cedulaPaciente)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Cedula == cedulaPaciente);
+            return _appContext.Pacientes.Find(cedulaPaciente);
         }
 
         IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientes()

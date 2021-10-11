@@ -26,7 +26,7 @@ namespace Nutrielemental.App.Persistencia
         void IRepositorioHistoria.DeleteHistoria(int IdHistoria)
         {
 
-            var HistoriaEncontrada = _appContext.Historias.FirstOrDefault(h => h.Id == IdHistoria);
+            var HistoriaEncontrada = _appContext.Historias.Find(IdHistoria);
             if (HistoriaEncontrada == null)
                 return;
             _appContext.Historias.Remove(HistoriaEncontrada);
@@ -42,16 +42,19 @@ namespace Nutrielemental.App.Persistencia
 
         Historia IRepositorioHistoria.GetHistoria(int IdHistoria)
         {
-            return _appContext.Historias.FirstOrDefault(h => h.Id == IdHistoria);
+            return _appContext.Historias.Find(IdHistoria);
         }
 
         Historia IRepositorioHistoria.UpdateHistoria(Historia historia)
         {
-            var HistoriaEncontrada = _appContext.Historias.FirstOrDefault(p => p.Id == historia.Id);
+            var HistoriaEncontrada = _appContext.Historias.Find(historia.Id);
             if (HistoriaEncontrada != null)
             {
-                //propiedades de la historia
-
+                HistoriaEncontrada.Diagnostico = historia.Diagnostico;
+                HistoriaEncontrada.Paciente = historia.Paciente;
+                HistoriaEncontrada.AntecedentesFamiliares = historia.AntecedentesFamiliares;
+                HistoriaEncontrada.AntecedentesPersonales = historia.AntecedentesPersonales;
+                HistoriaEncontrada.SugerenciaNutricional = historia.SugerenciaNutricional;
 
                 _appContext.SaveChanges();
 

@@ -6,7 +6,7 @@ namespace NutriElemental.App.Persistencia
 {
     public class RepositorioCoach : IRepositorioCoach
     {
-        private readonly NutriElemental.App.Persistencia.AppContext _appContext = new NutriElemental.App.Persistencia.AppContext();
+        private readonly AppContext _appContext = new AppContext();
 
         public IEnumerable<Coach> GetAllCoach() {
              return _appContext.Coachs;
@@ -19,7 +19,7 @@ namespace NutriElemental.App.Persistencia
         }
 
         public Coach UpdateCoach (Coach coach){
-            var currentCoach = _appContext.Coachs.FirstOrDefault(c => c.Id == coach.Id);
+            var currentCoach = _appContext.Coachs.Find(coach.Id);
             if (currentCoach != null)
             {
                 currentCoach.TarjetaProfesional = coach.TarjetaProfesional;
@@ -30,7 +30,7 @@ namespace NutriElemental.App.Persistencia
         }
 
         public void DeleteCoach (string CedulaCoach){
-            var coachFound = _appContext.Coachs.FirstOrDefault(c => c.Cedula == CedulaCoach);
+            var coachFound = _appContext.Coachs.Find(CedulaCoach);
             if (coachFound == null)
                 return;
             _appContext.Coachs.Remove(coachFound);
@@ -38,7 +38,7 @@ namespace NutriElemental.App.Persistencia
         }
 
         public Coach GetCoach (string CedulaCoach){
-            return _appContext.Coachs.FirstOrDefault(c => c.Cedula == CedulaCoach);
+            return _appContext.Coachs.Find(CedulaCoach);
         }
 
     }
