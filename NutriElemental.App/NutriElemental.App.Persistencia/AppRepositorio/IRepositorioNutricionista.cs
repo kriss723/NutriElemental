@@ -8,7 +8,7 @@ namespace NutriElemental.App.Persistencia
         IEnumerable<Nutricionista> GetAllNutricionista(); 
         Nutricionista AddNutricionista (Nutricionista nutricionista);
         Nutricionista UpdateNutricionista (Nutricionista nutricionista);
-        void DeleteNutricionista (string cedulaNutricionista);
+        void DeleteNutricionista (string IdNutricionista);
         Nutricionista GetNutricionista (string cedulaNutricionista); 
         
     }

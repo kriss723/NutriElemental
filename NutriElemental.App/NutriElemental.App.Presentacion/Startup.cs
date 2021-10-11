@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NutriElemental.App.Persistencia;
+using NutriElemental.App.Dominio;
 
 namespace NutriElemental.App.Presentacion
 {
@@ -20,10 +22,12 @@ namespace NutriElemental.App.Presentacion
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // This method gets called by the runtime. Use this method to add services to the container
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
+            services.AddSingleton<IRepositorioNutricionista, RepositorioNutricionista>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

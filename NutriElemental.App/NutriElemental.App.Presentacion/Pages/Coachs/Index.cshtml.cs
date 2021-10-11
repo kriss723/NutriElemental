@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace HospiEnCasa.App.Presentacion.Pages
+namespace HospiEnCasa.App.Presentacion.Pages.Coachs
 {
     public class IndexModel : PageModel
     {

@@ -1,4 +1,41 @@
 ﻿@page
-@model HospiEnCasa.App.Presentacion.Pages.IndexModel
+@model HospiEnCasa.App.Presentacion.Pages.Pacientes.IndexModel
 @{
 }
+<h1>Lista de Pacientes</h1>
+
+<button class="btn btn-info">Agregar Paciente</button> <br>
+
+<table class="table table-success table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col"> Nombre </th>
+            <th scope="col"> Apellidos </th>
+            <th scope="col"> Cedula </th>
+            <th scope="col"> FechaNacimiento </th>
+            <th scope="col"> Direccion </th>
+            <th scope="col"> Ciudad </th>
+            <th scope="col"> Celular </th>
+            <th scope="col"> Email </th>
+            <th scope="col"> Genero </th>
+            <th scope="col"> Latitud </th>
+            <th scope="col"> Longitud </th>
+        </tr>
+    </thead>
+   @foreach (var p in Model.Paciente)
+   {
+       <tr>
+           <td>@p.Nombre</td>
+           <td>@p.Apellido</td>
+           <td>@p.Cedula</td>
+           <td>@p.FechaNacimiento</td>
+           <td>@p.Direccion</td>
+           <td>@p.Ciudad</td>
+           <td>@p.Celular</td>
+           <td>@p.Email</td>
+           <td>@p.Genero</td>
+           <td>@p.Latitud</td>
+           <td>@p.Longitud</td>
+       </tr>
+   }
+</table>
