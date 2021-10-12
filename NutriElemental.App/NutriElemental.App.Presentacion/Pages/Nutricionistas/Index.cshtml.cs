@@ -11,9 +11,9 @@ namespace HospiEnCasa.App.Presentacion.Pages.Nutricionistas
 {
     public class IndexModel : PageModel
     {
-        private readonly IRepositorioNutricionistas _repoNutricionista;
+        private readonly IRepositorioNutricionista _repoNutricionista;
         public IEnumerable<Nutricionista> Nutricionista{get;set;}
-        public IndexModel(IRepositorioNutricionistas _repoNutricionista)
+        public IndexModel(IRepositorioNutricionista _repoNutricionista)
         {
             this._repoNutricionista = _repoNutricionista;
         }
