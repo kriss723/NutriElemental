@@ -1,0 +1,40 @@
+﻿@page
+@model NutriElemental.App.Presentacion.Pages.LoginModel
+@{
+    Layout = "_Login";
+    ViewData["Title"] = "Login";
+}
+<img class="wave" src="~/img/login/wave.png">
+    <div class="container">
+        <div class="img" style="max-width: 300px;">
+            <img src="~/img/login/logoNutrielemental2.png">
+        </div>
+        <div class="login-content">
+            <form action="Post">
+                <img src="~/img/login/avatar.svg">
+                <h2 class="title">NutriElemental</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="email" class="input" required="required">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input" required="required">
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" class="btn custom-btn mb-4" value="Ingresa">
+                <!--<input type="button" class="btn" value="Registrate" asp-page="/Registro/Index">-->
+                <a class="btn custom-btn"asp-page="/Registro/Index">Registrate</a>
+            </form>
+        </div>
+    </div>

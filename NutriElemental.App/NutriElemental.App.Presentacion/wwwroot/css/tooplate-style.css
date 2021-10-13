@@ -11,10 +11,11 @@ https://www.tooplate.com/view/2115-marvel
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
+  background-color: aliceblue;
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .small-text {

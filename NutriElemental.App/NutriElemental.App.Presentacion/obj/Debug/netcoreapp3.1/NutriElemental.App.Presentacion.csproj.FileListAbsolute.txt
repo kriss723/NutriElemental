@@ -166,3 +166,10 @@ G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemen
 G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.dll
 G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.pdb
 G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\NutriElemental.App.Presentacion.genruntimeconfig.cache
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Login.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Registro\Index.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Registro.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Registro\Coach.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Registro\Nutricionistas.cshtml.g.cs
+G:\programasMisionTICiclo3\VersionFinalNutrielemental\NutriElemental\NutriElemental.App\NutriElemental.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Registro\Pacientes.cshtml.g.cs
