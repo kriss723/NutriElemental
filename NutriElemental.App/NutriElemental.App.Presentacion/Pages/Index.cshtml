@@ -1,10 +1,42 @@
 ﻿@page
 @model IndexModel
 @{
-    //ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">El arte de la alimentación inteligente <span class="mobile-block"></span></small> 
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">El software para</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Nutriólogos</span>
+                                    <span class="animated-item">Dietistas</span>
+                                    <span class="animated-item">Nutricionistas</span>
+                                </div>
+                        </h1>
+
+                        <p>Diseñado para  establecer un plan alimenticio personalizado, modificar el plan nutricional de acuerdo a patologías específicas, permite hacer un seguimiento de la información antropométrica del paciente, estudiar el historial clínico de cada persona y brindar recomendaciones sobre las preparaciones de las dietas.</p>
+                        <!-- Por si queda tiempo realizar una pagina de Nosotros
+                        <div class="custom-btn-group mt-4">
+                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Conocenos</a>
+                        </div>-->
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="~/img/index/prueba.png" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
