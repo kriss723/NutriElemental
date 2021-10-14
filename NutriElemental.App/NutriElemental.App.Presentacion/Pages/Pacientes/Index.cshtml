@@ -4,38 +4,70 @@
 }
 <h1>Lista de Pacientes</h1>
 
-<button class="btn btn-info">Agregar Paciente</button> <br>
+<div class="table-responsive">
+    <table class="table table-success table-striped table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col"> Nombre </th>
+                <th scope="col"> Apellidos </th>
+                <th scope="col"> Cedula </th>
+                <th scope="col"> Ciudad </th>
+                <th scope="col"> Genero </th>
+                <th scope="col"> Mas</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+                <th scope="col">Registro</th>
+                <th scope="col">Elegir</th>
+                <th scope="col">Elegir</th>
+                <th scope="col">Elegir</th>
+            </tr>
+        </thead>
+        @foreach (var p in Model.Paciente)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Apellido</td>
+                <td>@p.Cedula</td>
+                <td>@p.Ciudad</td>
+                <td>@p.Genero</td>
+                <td>
+                    <a class="btn btn-info table-btn m-0" asp-page="./ActualizarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-warning table-btn m-0" asp-page="./ActualizarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-edit"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn m-0" asp-page="./EliminarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-minus"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-success table-btn m-0" asp-page="./Signos" asp-route-Id=@p.Id>
+                        <i class="fas fa-file-medical-alt"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-info table-btn m-0" asp-page="./EliminarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-friends"> Coach</i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-success table-btn m-0" asp-page="./EliminarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-md"> Nutricionista</i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-info table-btn m-0" asp-page="./EliminarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-file-medical"> Antecedentes</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
 
-<table class="table table-success table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th scope="col"> Nombre </th>
-            <th scope="col"> Apellidos </th>
-            <th scope="col"> Cedula </th>
-            <th scope="col"> FechaNacimiento </th>
-            <th scope="col"> Direccion </th>
-            <th scope="col"> Ciudad </th>
-            <th scope="col"> Celular </th>
-            <th scope="col"> Email </th>
-            <th scope="col"> Genero </th>
-            <th scope="col"> Latitud </th>
-            <th scope="col"> Longitud </th>
-        </tr>
-    </thead>
-   @foreach (var p in Model.Paciente)
-   {
-       <tr>
-           <td>@p.Nombre</td>
-           <td>@p.Apellido</td>
-           <td>@p.Cedula</td>
-           <td>@p.FechaNacimiento</td>
-           <td>@p.Direccion</td>
-           <td>@p.Ciudad</td>
-           <td>@p.Celular</td>
-           <td>@p.Email</td>
-           <td>@p.Genero</td>
-           <td>@p.Latitud</td>
-           <td>@p.Longitud</td>
-       </tr>
-   }
-</table>
+<button class="btn btn-info">Agregar Paciente</button> <br>
