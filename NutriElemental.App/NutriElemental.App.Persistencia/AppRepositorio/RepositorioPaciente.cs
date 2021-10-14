@@ -73,6 +73,13 @@ namespace NutriElemental.App.Persistencia
             
         }*/
 
+        //metodo para loguear y redirigir
+        Persona IRepositorioPaciente.LoginPersona(string EmailUsuario, string passwordUsuario)
+        {
+            var Persona = _appContext.Personas.Where(p => p.Email == EmailUsuario && p.Password == passwordUsuario).Select(p => p);
+            return (Persona) Persona;
+        }
+
 
     }
 }

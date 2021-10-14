@@ -28,6 +28,7 @@ namespace NutriElemental.App.Presentacion
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
             services.AddSingleton<IRepositorioNutricionista, RepositorioNutricionista>();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,8 +47,11 @@ namespace NutriElemental.App.Presentacion
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            
+            //la parte para los login
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

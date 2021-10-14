@@ -10,7 +10,7 @@
             <img src="~/img/login/logoNutrielemental2.png">
         </div>
         <div class="login-content">
-            <form action="Post">
+            <form action="post">
                 <img src="~/img/login/avatar.svg">
                 <h2 class="title">NutriElemental</h2>
                 <div class="input-div one">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="div">
                         <h5>Email</h5>
-                        <input type="email" class="input" required="required">
+                        <input type="email" class="input" asp-for="EmailUsuario" required="required">
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="div">
                         <h5>Password</h5>
-                        <input type="password" class="input" required="required">
+                        <input type="password" class="input" asp-for="PasswordUsuario" required="required">
                     </div>
                 </div>
                 <a href="#">Forgot Password?</a>

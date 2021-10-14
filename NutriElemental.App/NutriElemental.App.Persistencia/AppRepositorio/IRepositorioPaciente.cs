@@ -10,6 +10,9 @@ namespace NutriElemental.App.Persistencia
         Paciente UpdatePaciente (Paciente paciente);
         void DeletePaciente (string cedulaPaciente);
         Paciente GetPaciente (string cedulaPaciente); 
+
+        Persona LoginPersona(string Email, string password);
+
         //Nutricionista AsignarMedico (string cedulaPaciente, int idNutricionista);
         //Coach AsignarEnfermera(string cedulaPaciente, string cedulaCoach);
     }

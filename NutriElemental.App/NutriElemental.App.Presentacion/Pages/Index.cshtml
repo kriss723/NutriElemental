@@ -38,3 +38,16 @@
             </div>
         </div>
     </section>
+
+    @if(User.Identity.IsAuthenticated){
+        <table class="table table-sm">
+            @foreach (var x in User.Claims)
+            {
+                <tr>
+                    <td>@x.Type</td>
+                    <td>@x.Value</td>
+                </tr>
+            }
+
+        </table>
+    }

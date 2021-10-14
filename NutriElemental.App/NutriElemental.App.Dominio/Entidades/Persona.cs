@@ -13,5 +13,6 @@ namespace NutriElemental.App.Dominio
         public string Email {get;set;}
         public string Password{get;set;}
         public Genero Genero {get;set;}
+        public string Discriminator {get;}
     }
 }
