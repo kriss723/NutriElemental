@@ -2,3 +2,45 @@
 @model HospiEnCasa.App.Presentacion.Pages.Nutricionistas.IndexModel
 @{
 }
+<h1>Lista de Nutricionistas</h1>
+
+<div class="table-responsive">
+    <table class="table table-success table-striped table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col"> Nombre </th>
+                <th scope="col"> Apellidos </th>
+                <th scope="col"> Cedula </th>
+                <th scope="col"> Genero </th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Registro Rethus</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+            </tr>
+        </thead>
+        @foreach (var p in Model.Nutricionista)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Apellido</td>
+                <td>@p.Cedula</td>            
+                <td>@p.Genero</td>
+                <td>@p.Especialidad</td>
+                <td>@p.RegistroRethus</td>
+                <td>
+                    <a class="btn btn-warning table-btn m-0" asp-page="./ActualizarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-edit"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn m-0" asp-page="./EliminarPaciente" asp-route-Id=@p.Id>
+                        <i class="fas fa-user-minus"></i>
+                    </a>
+                </td>
+                
+            </tr>
+        }
+    </table>
+</div>
+
+<a class="btn btn-info" asp-page = "./Crear">Agregar Nutricionistas</a> <br>

@@ -1,0 +1,51 @@
+﻿@page
+@model NutriElemental.App.Presentacion.Pages.Nutricionistas.CrearModel
+@{
+}<br>
+<h2>Nuevo Nutricionista</h2> <br>
+<form class="row g-3" method="post">
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Nombre"></label>
+        <input type="text" class="form-control"asp-for="Nutricionista.Nombre"required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Apellido"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Apellido" required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Cedula"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Cedula"required>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label" asp-for="Nutricionista.Email"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Email">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Nutricionista.Celular"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Celular">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Nutricionista.Direccion"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Direccion">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Genero">Genero</label>
+        <select name="" id="" class="form-control">
+            <option value="">Elegir</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Especialidad"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Especialidad">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.RegistroRethus"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.RegistroRethus">
+    </div>
+    <div class="col-md-12">
+        <label for=""></label>
+        <button type="submit" class="btn btn-success form-control">Guardar</button>
+    </div>
+</form>
