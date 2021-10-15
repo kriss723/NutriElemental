@@ -7,19 +7,25 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using NutriElemental.App.Dominio;
 using NutriElemental.App.Persistencia;
 
-namespace HospiEnCasa.App.Presentacion.Pages.Coachs
+namespace NutriElemental.App.Presentacion.Pages.Coachs
 {
-    public class IndexModel : PageModel
+    public class CrearModel : PageModel
     {
         private readonly IRepositorioCoach _repoCoach;
-        public IEnumerable<Coach> Coach{get;set;}
-        public IndexModel(IRepositorioCoach _repoCoach)
+        public Coach Coach{get;set;}
+        public CrearModel(IRepositorioCoach _repoCoach)
         {
             this._repoCoach = _repoCoach;
         }
         public void OnGet()
         {
-            Coach = _repoCoach.GetAllCoach();
+            Coach = new Coach();
+        }
+
+        public IActionResult OnPost(Coach coach)
+        {
+            _repoCoach.AddCoach(coach);
+            return RedirectToPage("Index");
         }
     }
 }

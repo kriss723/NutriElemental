@@ -28,6 +28,7 @@ namespace NutriElemental.App.Presentacion
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
             services.AddSingleton<IRepositorioNutricionista, RepositorioNutricionista>();
+            services.AddSingleton<IRepositorioCoach, RepositorioCoach>();
             services.AddControllersWithViews();
         }
 

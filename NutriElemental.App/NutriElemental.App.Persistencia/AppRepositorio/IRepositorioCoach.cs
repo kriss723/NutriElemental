@@ -8,7 +8,7 @@ namespace NutriElemental.App.Persistencia
         IEnumerable<Coach> GetAllCoach(); 
         Coach AddCoach (Coach coach);
         Coach UpdateCoach (Coach coach);
-        void DeleteCoach (string CedulaCoach);
-        Coach GetCoach (string CedulaCoach); 
+        void DeleteCoach (int idCoach);
+        Coach GetCoach (int idCoach); 
     }
 }

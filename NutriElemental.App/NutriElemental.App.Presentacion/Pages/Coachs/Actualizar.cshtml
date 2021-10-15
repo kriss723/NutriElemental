@@ -1,0 +1,52 @@
+﻿@page
+@using NutriElemental.App.Dominio;
+@model NutriElemental.App.Presentacion.Pages.Coachs.ActualizarModel
+@{
+}<br>
+<h2>Actualizar Coach</h2> <br>
+<form class="row g-3" method="post">
+    <div class="col-md-4" hidden>
+        <label class="form-label" asp-for="Coach.Id"></label>
+        <input type="text" class="form-control"asp-for="Coach.Id"required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Nombre"></label>
+        <input type="text" class="form-control"asp-for="Coach.Nombre"required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Apellido"></label>
+        <input type="text" class="form-control" asp-for="Coach.Apellido" required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Cedula"></label>
+        <input type="text" class="form-control" asp-for="Coach.Cedula"required>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label" asp-for="Coach.Email"></label>
+        <input type="text" class="form-control" asp-for="Coach.Email">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Celular"></label>
+        <input type="text" class="form-control" asp-for="Coach.Celular">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Direccion"></label>
+        <input type="text" class="form-control" asp-for="Coach.Direccion">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Genero">Genero</label>
+        <select class="form-control" asp-for="Coach.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.TarjetaProfesional"></label>
+        <input type="text" class="form-control" asp-for="Coach.TarjetaProfesional">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.HorasLaborales"></label>
+        <input type="text" class="form-control" asp-for="Coach.HorasLaborales">
+    </div>
+    <div class="col-md-12">
+        <label for=""></label>
+        <button type="submit" class="btn btn-success form-control">Actualizar</button>
+    </div>
+</form>

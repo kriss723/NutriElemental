@@ -1,9 +1,15 @@
 ﻿@page
-@model NutriElemental.App.Presentacion.Pages.Nutricionistas.CrearModel
+@using NutriElemental.App.Dominio
+@model NutriElemental.App.Presentacion.Pages.Nutricionistas.ActualizarModel
 @{
 }<br>
-<h2>Nuevo Nutricionista</h2> <br>
+<h2>Actualizar Nutricionista</h2>
+
 <form class="row g-3" method="post">
+    <div class="col-md-4" hidden>
+        <label class="form-label" asp-for="Nutricionista.Id"></label>
+        <input type="text" class="form-control"asp-for="Nutricionista.Id"required>
+    </div>
     <div class="col-md-4">
         <label class="form-label" asp-for="Nutricionista.Nombre"></label>
         <input type="text" class="form-control"asp-for="Nutricionista.Nombre"required>
@@ -30,11 +36,7 @@
     </div>
     <div class="col-md-4">
         <label class="form-label" asp-for="Nutricionista.Genero">Genero</label>
-        <select class="form-control">
-            <option value="">Elegir</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Femenino">Femenino</option>
-        </select>
+        <select class="form-control" asp-for="Nutricionista.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>
     </div>
     <div class="col-md-4">
         <label class="form-label" asp-for="Nutricionista.Especialidad"></label>
@@ -46,6 +48,6 @@
     </div>
     <div class="col-md-12">
         <label for=""></label>
-        <button type="submit" class="btn btn-success form-control">Guardar</button>
+        <button type="submit" class="btn btn-success form-control">Actualizar</button>
     </div>
 </form>

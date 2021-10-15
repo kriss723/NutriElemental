@@ -22,6 +22,12 @@ namespace NutriElemental.App.Persistencia
             var currentCoach = _appContext.Coachs.Find(coach.Id);
             if (currentCoach != null)
             {
+                currentCoach.Nombre = coach.Nombre;
+                currentCoach.Apellido = coach.Apellido;
+                currentCoach.Cedula = coach.Cedula;
+                currentCoach.Email = coach.Email;
+                currentCoach.Celular = coach.Celular;
+                currentCoach.Genero = coach.Genero;
                 currentCoach.TarjetaProfesional = coach.TarjetaProfesional;
                 currentCoach.HorasLaborales = coach.HorasLaborales;
                 _appContext.SaveChanges();
@@ -29,16 +35,16 @@ namespace NutriElemental.App.Persistencia
             return currentCoach;
         }
 
-        public void DeleteCoach (string CedulaCoach){
-            var coachFound = _appContext.Coachs.Find(CedulaCoach);
+        public void DeleteCoach (int idCoach){
+            var coachFound = _appContext.Coachs.Find(idCoach);
             if (coachFound == null)
                 return;
             _appContext.Coachs.Remove(coachFound);
             _appContext.SaveChanges();
         }
 
-        public Coach GetCoach (string CedulaCoach){
-            return _appContext.Coachs.Find(CedulaCoach);
+        public Coach GetCoach (int idCoach){
+            return _appContext.Coachs.Find(idCoach);
         }
 
     }

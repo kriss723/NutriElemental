@@ -1,0 +1,52 @@
+﻿@page
+@model NutriElemental.App.Presentacion.Pages.Coachs.CrearModel
+@{
+}<br>
+
+<h2>Nuevo Coach</h2> <br>
+<form class="row g-3" method="post">
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Nombre"></label>
+        <input type="text" class="form-control"asp-for="Coach.Nombre"required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Apellido"></label>
+        <input type="text" class="form-control" asp-for="Coach.Apellido" required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Cedula"></label>
+        <input type="text" class="form-control" asp-for="Coach.Cedula"required>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label" asp-for="Coach.Email"></label>
+        <input type="text" class="form-control" asp-for="Coach.Email">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Celular"></label>
+        <input type="text" class="form-control" asp-for="Coach.Celular">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Direccion"></label>
+        <input type="text" class="form-control" asp-for="Coach.Direccion">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Genero">Genero</label>
+        <select name="" id="" class="form-control">
+            <option value="">Elegir</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.TarjetaProfesional"></label>
+        <input type="text" class="form-control" asp-for="Coach.TarjetaProfesional">
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.HorasLaborales"></label>
+        <input type="text" class="form-control" asp-for="Coach.HorasLaborales">
+    </div>
+    <div class="col-md-12">
+        <label for=""></label>
+        <button type="submit" class="btn btn-success form-control">Guardar</button>
+    </div>
+</form>

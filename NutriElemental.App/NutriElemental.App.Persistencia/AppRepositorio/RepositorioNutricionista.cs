@@ -13,9 +13,9 @@ namespace NutriElemental.App.Persistencia
             return _appContext.Nutricionistas;
         }
 
-        Nutricionista IRepositorioNutricionista.GetNutricionista(string cedulaNutricionista)
+        Nutricionista IRepositorioNutricionista.GetNutricionista(int IdNutricionista)
         {
-            return _appContext.Nutricionistas.Find(cedulaNutricionista);
+            return _appContext.Nutricionistas.Find(IdNutricionista);
         }
 
         Nutricionista IRepositorioNutricionista.AddNutricionista(Nutricionista nutricionista)
@@ -26,7 +26,7 @@ namespace NutriElemental.App.Persistencia
 
         }
 
-        void IRepositorioNutricionista.DeleteNutricionista(string IdNutricionista)
+        void IRepositorioNutricionista.DeleteNutricionista(int IdNutricionista)
         {
             var DelNutrionista = _appContext.Nutricionistas.Find(IdNutricionista);
             if(DelNutrionista != null)
