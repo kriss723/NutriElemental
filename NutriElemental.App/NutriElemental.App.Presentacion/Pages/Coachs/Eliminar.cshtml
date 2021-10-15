@@ -1,4 +1,53 @@
 ﻿@page
+@using NutriElemental.App.Dominio
 @model NutriElemental.App.Presentacion.Pages.Coachs.EliminarModel
 @{
-}
+}<br>
+<h2>Eliminar Coach</h2> <br>
+<form class="row g-3" method="post">
+    <div class="col-md-4" hidden>
+        <label class="form-label" asp-for="Coach.Id"></label>
+        <input type="text" class="form-control"asp-for="Coach.Id"required>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Nombre"></label>
+        <input type="text" class="form-control"asp-for="Coach.Nombre"required readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Apellido"></label>
+        <input type="text" class="form-control" asp-for="Coach.Apellido" required readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Cedula"></label>
+        <input type="text" class="form-control" asp-for="Coach.Cedula"required readonly>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label" asp-for="Coach.Email"></label>
+        <input type="text" class="form-control" asp-for="Coach.Email" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Celular"></label>
+        <input type="text" class="form-control" asp-for="Coach.Celular" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Coach.Direccion"></label>
+        <input type="text" class="form-control" asp-for="Coach.Direccion" readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.Genero">Genero</label>
+        <select class="form-control" asp-for="Coach.Genero" asp-items="Html.GetEnumSelectList<Genero>()" readonly></select>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.TarjetaProfesional"></label>
+        <input type="text" class="form-control" asp-for="Coach.TarjetaProfesional" readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Coach.HorasLaborales"></label>
+        <input type="text" class="form-control" asp-for="Coach.HorasLaborales" readonly>
+    </div>
+    <div class="col-md-12">
+        <label for=""></label>
+        <button type="submit" class="btn btn-danger form-control">Eliminar</button>
+    </div>
+</form>
+

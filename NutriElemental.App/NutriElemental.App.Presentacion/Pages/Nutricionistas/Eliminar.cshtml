@@ -1,4 +1,52 @@
 ﻿@page
+@using NutriElemental.App.Dominio
 @model NutriElemental.App.Presentacion.Pages.Nutricionistas.EliminarModel
 @{
-}
+}<br>
+<h2>Eliminar Nutricionista</h2>
+<form class="row g-3" method="post">
+    <div class="col-md-4" hidden>
+        <label class="form-label" asp-for="Nutricionista.Id"></label>
+        <input type="text" class="form-control"asp-for="Nutricionista.Id"required readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Nombre"></label>
+        <input type="text" class="form-control"asp-for="Nutricionista.Nombre"required readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Apellido"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Apellido" required readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Cedula"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Cedula"required readonly>
+    </div>
+    <div class="col-md-12">
+        <label class="form-label" asp-for="Nutricionista.Email"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Email" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Nutricionista.Celular"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Celular" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" asp-for="Nutricionista.Direccion"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Direccion" readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Genero">Genero</label>
+        <select class="form-control" asp-for="Nutricionista.Genero" asp-items="Html.GetEnumSelectList<Genero>()" aria-readonly="true"></select>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.Especialidad"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.Especialidad" readonly>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label" asp-for="Nutricionista.RegistroRethus"></label>
+        <input type="text" class="form-control" asp-for="Nutricionista.RegistroRethus" readonly>
+    </div>
+    <div class="col-md-12">
+        <label for=""></label>
+        <button type="submit" class="btn btn-danger form-control">Eliminar</button>
+    </div>
+</form>

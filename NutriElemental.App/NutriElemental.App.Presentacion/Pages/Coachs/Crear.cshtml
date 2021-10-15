@@ -1,4 +1,5 @@
 ﻿@page
+@using NutriElemental.App.Dominio
 @model NutriElemental.App.Presentacion.Pages.Coachs.CrearModel
 @{
 }<br>
@@ -31,11 +32,7 @@
     </div>
     <div class="col-md-4">
         <label class="form-label" asp-for="Coach.Genero">Genero</label>
-        <select name="" id="" class="form-control">
-            <option value="">Elegir</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Femenino">Femenino</option>
-        </select>
+        <select class="form-control" asp-for="Coach.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>>
     </div>
     <div class="col-md-4">
         <label class="form-label" asp-for="Coach.TarjetaProfesional"></label>
